@@ -1,0 +1,33 @@
+﻿@using Olimpikonok.DTOs
+@{
+    ViewData["Title"] = "Országok adatai";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Országok adatai</h1>
+
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>Név</th>
+                <th>Neme</th>
+                <th>Főváros</th>
+                <th>Népesség</th>
+            </tr>
+
+
+        </thead>
+        <tbody>
+            @foreach (Orszag orszag in Model)
+            {
+                <tr>
+                    <td>@orszag.Id</td>
+                    <td>@orszag.Nev</td>
+                    <td>@orszag.Fovaros</td>
+                    <td>@orszag.Nepesseg</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>

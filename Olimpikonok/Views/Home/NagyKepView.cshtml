@@ -1,0 +1,11 @@
+﻿@using Olimpikonok.DTOs
+@{
+    ViewData["Title"] = "Nagy Kép";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Nagy kép</h1>
+   <img src="@Program.ImageConverter((Model as NagyKep).Kep)" />
+    
+    
+</div>
